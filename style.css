@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700;900&display=swap');
 
@@ -8,14 +9,11 @@
     text-decoration: none;
 }
 :root{
-    --fonte_padrao: normal 5vh 'Sriracha', verdana;
-    --fonte_titulo: normal 8vh 'Passion One', serif;
-    --fonte_subtitulo: normal 2.5vh Verdana, sans-serif;
+    --fonte_padrao: normal 3.5vw 'Sriracha', verdana;
+    --fonte_titulo: normal 8vw 'Passion One', serif;
+    --fonte_subtitulo: normal 2.5vw Verdana, sans-serif;
 }
 
-body{
-    
-}
 
 /*Cabeçalho*/
 
@@ -26,6 +24,7 @@ header{
     padding: 45px 20px;
 }
 header > h1 {
+    font-variant: small-caps;
     font: var(--fonte_titulo);
 }
 header > nav{
@@ -41,42 +40,42 @@ header a:visited{
 }
 /*Principal*/
 
-main{
-    padding: 20px 0px 60px 20px;
-    font: var(--fonte_padrao);
-}
 main p{
     margin: 10px 0px 10px 0px;
-    text-indent: 0.5em;
-    
+    font: var(--fonte_padrao);
+    line-height: 2em;
+    padding: 1em 0px 1em 0.3em;
 }
-
-article{
-    margin: 40px 0px 40px 0px;
+section{
+    padding: 10vh 0px 10vh 0px;
+    padding-left: 5vw;
 }
-figure{
-
-    margin-left: -20px ;
-    padding: 20px;
+section.normal{
+    background-color: rgba(247, 235, 206, 0.597);
 }
-#fig1{
+section.imagem{
+    box-shadow: 1px 5px 10px inset rgba(0, 0, 0, 0.405);
+}
+.imagem p{  
+    color: white;
+    background-color: rgba(0, 0, 0, 0.529);
+    display: inline-block;
+    padding-right: 5px;
+}
+#fundo1{
     background: rgb(2, 60, 24) url('imagens/background001.jpg') center right no-repeat fixed;
     background-size: cover;
 }
-#fig2{
+#fundo2{
     background: rgb(222, 195, 150) url('imagens/background002.jpg') center center no-repeat fixed;
     background-size: cover;
 }
-aside.fundo{
-    padding: 10px 0px 10px 0px;
-    
-    color: white;
-    background-color: rgba(0, 0, 0, 0.529);
-    width: 15em;
-}
+
+
+/*Rodapé*/
 
 footer{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, sans-serif;
     padding: 10px;
     text-align: center;
     background: black;
